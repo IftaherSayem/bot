@@ -1,0 +1,20 @@
+# ============================================================
+# Docker Compose - Telegram OTP Bot (24/7)
+# ============================================================
+
+services:
+  otp-bot:
+    build: .
+    container_name: telegram-otp-bot
+    restart: unless-stopped    # crash হলে বা server restart হলে auto-start
+    environment:
+      - TZ=Asia/Dhaka         # বাংলাদেশ সময়
+      - NODE_ENV=production
+    volumes:
+      # SQLite database persist — container delete হলেও data থাকবে
+      - ./data:/app/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"       # log file max 10MB
+        max-file: "3"         # সর্বোচ্চ 3টি log file রাখবে

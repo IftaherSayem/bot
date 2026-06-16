@@ -1,0 +1,7 @@
+node_modules/
+data/
+.git/
+*.log
+.env
+.DS_Store
+telegram-otp-bot.zip
