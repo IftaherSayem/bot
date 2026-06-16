@@ -176,7 +176,7 @@ module.exports = {
       signinUrl: '/ints/signin',
       dashboardPath: '/ints/agent',
       username: 'tahsan100',
-      password: 'tahsan100',
+      password: 'tahsan200',
       enabled: true
     },
     // ---- Panel 12: CORE SMS (139.99.68.231) ✅ ----
@@ -200,7 +200,7 @@ module.exports = {
       signinUrl: '/ints/signin',
       dashboardPath: '/ints/agent',
       username: 'tahsan100',
-      password: 'tahsan100',
+      password: 'tahsan200',
       enabled: true
     },
 
