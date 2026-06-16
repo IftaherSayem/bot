@@ -328,8 +328,8 @@ class OTPMonitor {
         const groupMessage = `<blockquote>MSH OTP BOT | OTP RCV</blockquote>\n` +
           `📞 <b>Number:</b> <code>${maskedNumber}</code>\n` +
           `🔑 <b>OTP Code:</b> <code>${otp}</code>\n\n` +
-          `🌐 <b>Country:</b> ${flag} ${countryName}\n\n` +
-          `<blockquote>${escHTML(fullMessage)}</blockquote>`;
+          `🌐 <b>Country:</b> ${flag} ${countryName}\n\n`;
+        // +`<blockquote>${escHTML(fullMessage)}</blockquote>`
 
         const groupKeyboard = {
           inline_keyboard: [
